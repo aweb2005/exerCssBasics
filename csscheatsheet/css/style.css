@@ -1,0 +1,229 @@
+
+
+/* h1{
+    color:green;
+} -->  */
+
+body{
+    background-color: #f4f4f4;
+    color:#555555;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    /* same as above -> font: normal 16px Arial, Helvetica, sans-serif; */
+    line-height: 1.6em;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover{
+    color: black;
+}
+
+a:active{
+    color:green;
+}
+
+a:visited{
+
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+.button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 15px;
+    border:none;
+}
+
+.button:hover{
+    background: red;
+    color: #fff;
+}
+
+.clr{
+    clear:both;
+}
+
+.box-1{
+    background-color: #333;
+    color:#fff;
+
+    border-right:5px red solid;
+    border-left: 5px red solid;
+    border-top: 5px red solid;
+    border-bottom: 5px red solid;
+    /* same as above -> boarder: 5px red solid; */
+
+    border-width:3px;
+    border-bottom width:10px;
+    border-top-style:dotted;
+    /*reads instructions in order so blow will override all above */
+    border:5px red solid;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+
+        /* same as above ->  */
+        padding:20px;
+
+        margin-top:20px;
+        margin:20px 0;
+}
+
+.box-1 h1{
+    font-family: 'Segoe UI', Tahoma;
+    font-weight: 800;
+    font-style: italic;
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    word-spacing: 1em;
+
+}
+
+.box-2 {
+    border: 3px dotted #ccc;
+    padding:20px;
+    margin:20px 0;
+}
+
+.categories {
+    border:1px #ccc solid;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.categories h2{
+    text-align: center;
+}
+
+.categories ul{
+    padding: 0;
+    list-style: none;
+}
+
+.categories li{
+    padding-bottom: 8px;
+    border-bottom: dotted 1px #333;
+    list-style-image: url('../images/check.png');
+}
+
+.my-form{
+    padding: 20px;
+}
+
+.my-form .form-group {
+    padding-bottom: 15px;
+}
+
+.my-form label{
+    display: block;
+}
+
+.my-form input[type="text"], .my-form textarea{
+    padding: 8px;
+    width: 100%;
+}
+
+/*.my-form input[type="submit"]{
+    background-color: #333;
+    color: #fff;
+    padding: 10px 15px;
+    border:none;
+}*/
+
+.block{
+    float: left;
+    width: 33.3%;
+    border:1px solid #ccc;
+    padding:10px;
+    box-sizing:border-box;
+}
+
+#main-block{
+    float: left;
+    width:70%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+#sidebar{
+    float: right;
+    width:30%;
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.p-box{
+    width: 800px;
+    height: 500px;
+    border: 1px solid #000;
+    margin-top: 30px;
+    position: relative;
+    background-image:url('../images/bgimage.jpg');
+    background-position: 100px 200px;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.p-box h1{
+    position: absolute;
+    top: 100px;
+    left: 200px;
+}
+
+.p-box h2{
+    position: absolute;
+    bottom: 40px;
+    right:100px;
+}
+
+.fix-me{
+    position: fixed;
+    top: 400px;
+    left:0px;
+}
+
+.my-list li:first-child{
+    background: red;
+}
+
+.my-list li:last-child{
+    background: blue;
+}
+
+.my-list li:nth-child(5){
+    background: yellow;
+}
+
+.my-list li:nth-child(even){
+    background: yellow;
+}
+
+/* 
+positioning - static, relative, absolute (target any spot in relative ), fixed (even if we scroll), initial, inherit
+class vs id's id's best when only used once, classes can keep being used
+margin and padding - box model in css - top margin then top border then top padding then content (center of box)
+long way define each top bottom sides separately, or shortcut margin: 5px 10px 5px 10px (top,right,bottom,left is the order) or just margin: 5px 10px; will to top/bottom, left/right, or margin: 5px (all around)
+using selectors  a {background color: yellow; }
+colors - can use color names, html5 color names, hexadecimal, RGB
+red, #00ff00, rgb(0,0,255) meaning (red, green, blue)
+fonts - websafe fonts are preloaded, times new roman default, serif have hooks on letters
+ Cascading Stylesheets , Not a programming language, layout and design, extended with Sass/less
+inline_css, directly in htmls is bad
+internal_Css, using style_ tags within single doc is ok, but lame
+External_css, Lining an external .css file, very best  
+*/
